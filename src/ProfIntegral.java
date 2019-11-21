@@ -1,26 +1,25 @@
 
 public class ProfIntegral extends Professores {
-
-    private int horas;
     
-    public ProfIntegral (String n,int h){
+    private double salario;
+    
+    public ProfIntegral (String n, double s){
         super (n);
-        this.setHoras(h);
+        this.setSalario (s);
     }
 
-    public int getHoras() {
-        return horas;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setHoras(int horas) {
-        this.horas = horas;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
     
-     public void salarioIntegral(double sal){
-        
-       sal = this.horas * 40;
+     public double calcularsalarioliquido(){
+        double salprofinte = this.getSalario()* 0.89;
+        return salprofinte;
     }
-      
+                
 }
-
     
